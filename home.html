@@ -53,32 +53,38 @@
         </p>
 
         <div class="tab-titles">
-          <p class="tab-links class active-links">Skills</p>
-          <p class="tab-links">Experience</p>
-          <p class="tab-links">Education</p>
+          <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+          <p class="tab-links" onclick="opentab('experience')">Experience</p>
+          <p class="tab-links" onclick="opentab('education')">Education</p>
 
         </div>
-        <div class="tab-content">
-          
+        <div class="tab-content active-tab" id="skills">          
           <ul>
 
             <li><span>Front-end Developmet</span><br>JavaScript-React</li>
             <li><span>Backend-end Developmet</span><br>Python-Django</li>
-            <li><span>Database- postgress,sqlite,mysql</span><br>JavaScript-React</li>
+            <li><span>Database management </span><br>postgress,sqlite,mysql</li>
 
-
-
-          </ul>
-        
+          </ul>        
         </div>
 
-        <div class="tab-content">
-          
+        <div class="tab-content" id="experience">          
           <ul>
 
-            <li><span>Front-end Developmet</span><br>JavaScript-React</li>
-            <li><span>Backend-end Developmet</span><br>Python-Django</li>
-            <li><span>Database- postgress,sqlite,mysql</span><br>JavaScript-React</li>
+            <li><span>2023-To date </span><br>React framework</li>
+            <li><span>2022</span><br>PythonDjango</li>
+            <li><span>2021</span><br>BAsic programming</li>
+
+
+
+          </ul>        
+        </div>
+
+        <div class="tab-content" id="education">          
+          <ul>
+
+            <li><span>2020-To date </span><br>Multimedia University</li>
+            <li><span>2020-2023</span><br>Google Courses</li>        
 
 
 
@@ -91,6 +97,22 @@
     </div>
 
   </div>
+  <script>
+    var tablinks = document.getElementsByClassName('tab-links');
+    var tabcontent = document.getElementsByClassName('tab-content');
+
+    function opentab(tabname){
+      for(tablink of tablinks){
+        tablink.classList.remove('active-links');
+      }
+      for (tab of tabcontent){
+        tab.classList.remove('active-tab');
+      }
+      event.currentTarget.classList.add('active-links');
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+
+  </script>
     
 </body>
 </html>
