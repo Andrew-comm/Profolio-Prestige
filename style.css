@@ -287,3 +287,68 @@ nav ul li a:hover::after{
 .btn:hover{
     background: #ff004f;
 }
+
+
+
+
+
+.contact-col-1{
+    flex-basis: 35%;
+}
+.contact-col-2{
+    flex-basis: 60%;
+}
+
+.contact-col-1 p{
+    margin-top: 30px;
+
+}
+
+.contact-col-1 i{
+    color: blueviolet;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-top: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{ 
+    transform: translateY(-5px);
+    color: #ff004f;
+}
+
+.btn.btn2{
+    display: inline block;
+    background-color: #ff004f;
+}
+
+.contact-col-2{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: #00ff00;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+
+}
+
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
