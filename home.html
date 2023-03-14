@@ -17,15 +17,17 @@
     <div class="container">
       <nav>
         <h1>Andrew Rono</h1>
-        <ul>
+        <ul id="side-menu">
           <li ><a href="#">Home</a></li>
           <li ><a href="#">About</a></li>
           <li ><a href="#">Projects</a></li>
           <li ><a href="#">Services</a></li>
           <li ><a href="#">Contact</a></li>
-
+          <i class="fa-sharp fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+          
         </ul>
-
+        <i class="fa-solid fa-bars" id="close" onclick="openmenu()"></i>
+      
       </nav>
 
       <div class="header-text">
@@ -242,6 +244,14 @@
     }
 
   </script>
-    
-</body>
-</html>
+
+  <script>
+     var sidemenu = document.getElementById('side-menu');
+     function openmenu(){
+      sidemenu.style.right='0';
+     }
+     
+     function closemenu(){
+      sidemenu.style.right='-200px';
+     }
+ </script>

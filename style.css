@@ -365,3 +365,79 @@ form .btn2{
 .copyright i{
     color:#ff0000;
 }
+
+
+nav .fa-sharp{
+    display: none;
+}
+nav .fa-solid{
+    display: none;
+}
+
+
+@media only screen and (max-width: 576px){
+    .header-text{
+        margin-top: 15%;
+        font-size: 18px;
+
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+
+nav .fa-sharp{
+    display: block;
+    font-size: 25px;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+    
+}
+nav .fa-solid{
+    display: block;
+    font-size: 25px;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+}
+nav ul{
+    background-color: #ff004f;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;padding-top: 50px;
+    z-index: 2;
+}
+.sub-title{
+    font-size: 40px;
+}
+.about-col-1, .about-col-2{
+    flex-basis:100% ;
+}
+.about-col-1{
+    margin-bottom: 30px;
+}
+.about-col-2{
+    font-size: 14px;
+}
+.tab-links{
+    font-size: 16px;
+    margin-right: 20px;
+}
+.contact-col-1, .contact-col-2{
+    flex-basis: 100%;
+}
+.copyright{
+    font-size: 14px;
+}
+
+
+
+
+
+}
+
+
