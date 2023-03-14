@@ -206,10 +206,10 @@
         </div>
         
         <div class="contact-col-2">
-          <form>
+          <form name="submit-to-google-sheet">
             <input type="text" name="Name" placeholder="Enter your name" required>
             <input type="email" name="Email" placeholder="Enter your email" required>
-            <textarea  rows="6" placeholder="Your message"></textarea>
+            <textarea name="Message" rows="6" placeholder="Your message"></textarea>
             <button type="submit" class="btn btn2">Submit</button>
           </form>
           
@@ -255,3 +255,18 @@
       sidemenu.style.right='-200px';
      }
  </script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyeJi5fY0Y0pKxd4O5QfGYY4WW0t1PuoNW1-PYCltzQ8jwdkxjrZX21aLF9XeE72Ge-OA/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+</body>
+</html>
