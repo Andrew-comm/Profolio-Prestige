@@ -40,12 +40,10 @@
 
       <div class="header-text">
         <p>Web Developer</p>
-        <h2>Hi there, I'm <small>Andrew</small><br> from Kenya....</h2><br><br><br>
+        <h2>Hi there, I'm <small id="changing-text">Andrew</small><br> from Kenya....</h2><br><br><br>
         I'm passionate about creating<br> user-friendly websites that deliver <br> seamless experiences to end-users. <br>
-        <br>
-      </div>
-
     </div>
+      
 
   </div>
 
@@ -249,6 +247,24 @@
   
   <script src="script.js" defer></script>
   <script>
+
+      
+        // Array of text values to cycle through
+        const textValues = ["Andrew", "Passionate Developer", "Web Enthusiast", "Front-End Guru", "Backend Developer"];
+        const changingText = document.getElementById("changing-text");
+        let index = 0;
+
+        function changeText() {
+            changingText.textContent = textValues[index];
+            index = (index + 1) % textValues.length;
+        }
+
+        // Call the changeText function every 2 seconds (adjust the timing as needed)
+        setInterval(changeText, 2500);
+    </script>
+
+
+<script>
     var tablinks = document.getElementsByClassName('tab-links');
     var tabcontent = document.getElementsByClassName('tab-content');
 

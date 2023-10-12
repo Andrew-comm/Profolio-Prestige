@@ -105,19 +105,18 @@ nav ul li a:hover::after{
     margin-top: 20px;
     font-size: 30px;
 }
-.header-text small{
+.header-text small {
     font-size: 32px;
     color: transparent;
     -webkit-text-stroke: 1px #ff004f;
     background: url('image/back.png');
     -webkit-background-clip: text;
-    background-position:0 0 ;
+    background-position: 0 0;
     animation: back 20s linear infinite;
-
-
 }
-@keyframes back{
-    100%{
+
+@keyframes back {
+    100% {
         background-position: 2000px 0;
     }
 }
