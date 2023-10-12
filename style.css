@@ -267,15 +267,47 @@ nav ul li a:hover::after{
     grid-gap: 40px;
     margin-top: 50px;
 }
-.services-list div{
+@keyframes borderAnimation {
+    0% { border-color: red; box-shadow: 0 0 10px red; }
+    25% { border-color: yellow; box-shadow: 0 0 10px yellow; }
+    50% { border-color: green; box-shadow: 0 0 10px green; }
+    75% { border-color: blue; box-shadow: 0 0 10px blue; }
+    100% { border-color: red; box-shadow: 0 0 10px red; }
+}
+
+/* Apply the animation to items with the class "animated-border" */
+.animated-border {
+    border: 2px solid red; /* Initial border style */
+    border-radius: 10px;
+    animation: borderAnimation 4s infinite; /* Apply animation */
+}
+
+/* Add some basic styles for the items */
+.services-list div {
     background: #262626;
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
     border-radius: 10px;
-    border-right: 10px;
     transition: background 0.5s, transform 0.5s;
+    position: relative; /* Needed for the pseudo-element */
 }
+
+.services-list div::before {
+    content: ""; /* Pseudo-element for illumination effect */
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border: 5px solid transparent;
+    border-image: linear-gradient(45deg, red, yellow, green, blue, red);
+    border-image-slice: 1;
+    border-radius: 15px;
+    animation: borderAnimation 4s infinite;
+    z-index: -1;
+}
+
 .services-list div i{
     font-size: 50px;
     margin-bottom: 30px;
