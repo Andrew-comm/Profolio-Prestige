@@ -105,6 +105,7 @@ nav ul li a:hover::after{
     margin-top: 20px;
     font-size: 30px;
 }
+
 .header-text small {
     font-size: 32px;
     color: transparent;
@@ -332,69 +333,99 @@ nav ul li a:hover::after{
     background-color: #ff0000;
     font-size: 18px;
 }
-
-#projects{
+#projects {
     padding: 50px;
 }
-.work-list{
+
+.work-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
-
 }
-.work{
+
+.work {
     border-radius: 10px;
-    position: relative;
     overflow: hidden;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; /* Add relative positioning */
 }
-.work img{
+
+.work img {
     border-radius: 10px;
     width: 100%;
+    height: 400px;
     display: block;
     transition: transform 0.5s;
 }
 
-.layer{
+.layer {
     width: 100%;
-    height: 0;
-     background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
-     position: absolute;
-     left: 0;
-     bottom: 0;
-     overflow: hidden;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     flex-direction: column;
-     padding: 0 40px;
-     text-align: center;
-     font-size: 14px;
-     transition: height 0.5s;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.6), #ff004f);
+    position: absolute;
+    left: 0; /* Change the initial position to 0 */
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-align: left;
+    font-size: 14px;
+    color: #fff;
+    transition: left 0.5s;
 }
-.layer h3{
-    font-weight: 500px;
+
+.layer h3 {
+    font-weight: 500;
     margin-bottom: 20px;
 }
-.layer a{
-    margin-top: 20px;
-    color: #ff004f;
+
+.layer p {
+    margin-bottom: 20px;
+}
+
+.work .btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.work .btn-container a {
+    color: #ffffff;
     text-decoration: none;
     font-size: 18px;
-    line-height: 60px;
+    padding: 10px 20px;
+    border-radius: 5px;
     background: #00ff00;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    text-align: center;
+    animation: breathing 3s infinite; /* Add breathing animation */
+    border: 2px solid #ff004f;
 }
-.work:hover img{
-    transform: scale(1.1);
 
+@keyframes breathing {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
-.work:hover .layer{
-    height: 100%;
+
+.work:hover .layer {
+    left: 0;
+}
+
+
+.work:hover .layer {
+    left: 0;
+}
+
+.work:hover img {
+    transform: scale(1.05);
 }
 .btn{
     display: block;
