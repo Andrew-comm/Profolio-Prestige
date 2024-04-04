@@ -13,39 +13,53 @@
 
 
 <body>
-  <video id="bg-video" autoplay loop muted>
+  <!-- <video id="bg-video" autoplay loop muted>
     <source src="image/background.mp4" type="video/mp4">
     Your browser does not support the video tag.
-  </video>
+  </video> -->
   
   <div id="header">
     <div class="container">
       <nav>
-        <h1>Andrew Rono</h1>
+        <h2 class="header-title">Andrew Rono</h2>
+        <i class="fa-sharp fa-solid fa-bars" id="menu-icon" onclick="toggleMenu()"></i>
         <ul id="side-menu">
-          <li ><a href="#header">Home</a></li>
-          <li ><a href="#about">About</a></li>
-          <li ><a href="#projects">Projects</a></li>
-          <li ><a href="#services">Services</a></li>
-          <li ><a href="#contact">Contact</a></li>
-          
-          
-          <i class="fa-sharp fa-solid fa-circle-xmark" onclick="closemenu()"></i>
-          
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-        <i class="fa-solid fa-bars" id="close" onclick="openmenu()"></i>
-      
       </nav>
-
-
-      <div class="header-text">
-        <p>FULL STACK DEVELOPER</p>
-        <h2>Hi there, I'm <small id="changing-text">Andrew</small><br> from Kenya....</h2><br><br><br>
-        I'm passionate about creating<br> user-friendly websites that deliver <br> seamless experiences to end-users. <br>
+  
+      <div class="header-content">
+        <h2 class="role">FULL STACK DEVELOPER</h2>
+        <h1 class="name">Hi there, I'm <span id="changing-text">Andrew</span> from Kenya....</h1>
+        <p class="description">Passionate about creating user-friendly web applications that deliver seamless experiences to end-users.</p>
+        <a href="#contact" class="cta-btn">Get in Touch</a>
       </div>
-      
-
+  
+      <div class="cards-container">
+        <div class="card">
+          <i class="fas fa-tools"></i>
+          <h3>Experience</h3>          
+          <p class="years">4+ Years</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-users"></i>
+          <h3>Clients</h3>          
+          <p class="number">30+</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-project-diagram"></i>
+          <h3>Projects</h3>          
+          <p class="number">20+</p>
+        </div>
+      </div>
+    </div>
   </div>
+  
+
 
   <div id="about">
     <div class="row">
@@ -53,18 +67,16 @@
         <div class="flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front">
-              <img src="image/prof.png">
+              <img src="image/andy.jpg">
 
             </div>
             <div class="flip-card-back">
-              <img src="image/prof.png">
+              <img src="image/andy.jpg">
 
             </div>
           </div>
 
-        </div>
-
-          
+        </div>         
 
       </div>
 
@@ -72,8 +84,7 @@
         <h1 class="sub-title">About Me</h1>
         <p>
           I'm a skilled web developer with expertise in both front-end and back-end development. I specialize in using technologies such as React and Django to create dynamic and powerful web applications that meet the unique needs of my clients. With a deep understanding of both the technical and creative aspects of web development, I bring a comprehensive approach to each project I undertake.
-
-          My passion for web development stems from a desire to create seamless and intuitive user experiences. From responsive web design to streamlined back-end processes, I believe that great web development is about more than just writing code - it's about crafting solutions that meet the needs of both the user and the business. Whether you're looking to build a new website from scratch or optimize an existing one, I have the skills and expertise to help you achieve your goals.
+          My passion for web development stems from a desire to create seamless and intuitive user experiences. 
         </p>
 
         <div class="tab-titles">
@@ -98,19 +109,13 @@
             <li><span>2023-To date </span><br>React framework, <br>Vuejs, <br>Laravel,</li>
             <li><span>2022</span><br>PythonDjango</li>
             <li><span>2021</span><br>Basic programming</li>
-
-
-
           </ul>        
         </div>
 
         <div class="tab-content" id="education">          
           <ul>
-
             <li><span>2020-To date </span><br>Multimedia University</li>
-            <li><span>2020-2023</span><br>Google  Career Courses</li>        
-
-
+            <li><span>2020-2023</span><br>Google  Career Courses</li>   
 
           </ul>
         
@@ -121,52 +126,121 @@
     </div>
 
   </div>
-  
+
   <div id="services">
     <div class="container">
       <h1 class="sub-title">My Expertise and Capabilities</h1>
-
+  
       <div class="services-list">
-
+  
         <div class="animated-border">
-          <i class="fa-sharp fa-solid fa-code"></i>
+          <i class="fas fa-code"></i>
           <h2>Front-end Web Development</h2>
           <p>
-            I specialize in HTML, CSS, and JavaScript, Tailwind css, and use these technologies to create responsive and interactive user interfaces. I also use frameworks such as Bootstrap, Vuejs and React to streamline the development process and deliver high-quality results.
+            I specialize in HTML, CSS, and JavaScript, Tailwind CSS, and use these technologies to create responsive and interactive user interfaces. I also use frameworks such as Bootstrap, Vue.js, and React to streamline the development process and deliver high-quality results.
           </p>
-          
         </div>
-
+  
         <div class="animated-border">
-          <i class="fa-solid fa-server"></i>
-          <h2>backend-end Web Development</h2>          
+          <i class="fas fa-server"></i>
+          <h2>Backend Web Development</h2>          
           <p>
-           Server-Side Programming: I use server-side programming languages such as PHP, Python to create web applications that interact with databases and APIs. I also use frameworks such as Laravel, Django, and Ruby  to speed up the development process and improve code quality.
+            Server-Side Programming: I use server-side programming languages such as PHP, Python to create web applications that interact with databases and APIs. I also use frameworks such as Laravel, Django, and Ruby to speed up the development process and improve code quality.
           </p>
-         
         </div>
-
+  
         <div class="animated-border">
-          <i class="fa-solid fa-database"></i>
+          <i class="fas fa-database"></i>
           <h2>Database Management</h2>          
-           Database Design and Implementation: I have expertise in designing and implementing databases using MySQL, PostgreSQL, SQLite,Apache cassandra and MongoDB. I work closely with clients to understand their business needs and design databases that meet their requirements while ensuring data integrity and security.
-           </p>
-          
+          <p>
+            Database Design and Implementation: I have expertise in designing and implementing databases using MySQL, PostgreSQL, SQLite, Apache Cassandra, and MongoDB. I work closely with clients to understand their business needs and design databases that meet their requirements while ensuring data integrity and security.
+          </p>
         </div>
-
-
-        
-
+  
+        <div class="animated-border">
+          <i class="fab fa-aws"></i>
+          <h2>AWS Services</h2>          
+          <p>
+            I provide AWS services including but not limited to cloud computing, storage, databases, machine learning, and more. Leveraging the power of AWS, I help businesses scale and innovate efficiently.
+          </p>
+        </div>
+  
+        <div class="animated-border">
+          <i class="fab fa-erp"></i>
+          <h2>ERP Solutions</h2>          
+          <p>
+            I specialize in ERPNext and Frappe. ERPNext is an open-source ERP solution that helps businesses manage their processes across various functions such as accounting, inventory, HR, and CRM. Frappe is a full-stack web application framework used to build ERPNext and other applications rapidly.
+          </p>
+        </div>
+  
       </div>
-
+  
     </div>
-
   </div>
+  
 
   <div id="projects">
     <div class="container">
-       <h1 class="sub-title">My Work</h1>
-        <div class="work-list">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">        
+            
+            <div class="work">
+                <img src="image/echo.png">
+                <div class="layer">
+                    <h3>StudentVoice</h3>
+                    <p>
+                        An all-rounded campus feedback system that allows students to give feedback on various aspects of campus life, including academics, facilities, and services.
+                    </p>
+                </div>
+                <div class="btn-container">
+                    <a href="https://campusecho.onrender.com/">LIVE</a>
+                    <a href="https://github.com/Andrew-comm/CampusEcho.git">CODE</a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="image/market.png">
+                <div class="layer">
+                    <h3>MarketHub</h3>
+                    <p>
+                        MarketHub is a Django e-commerce site that offers a wide range of products, including electronics, clothing, and accessories, with fast shipping and secure payment options.
+                    </p>
+                </div>
+                <div class="btn-container">
+                    <a href="https://markethub-347n.onrender.com/">LIVE</a>
+                    <a href="https://github.com/Andrew-comm/MarketHub.git">CODE</a>
+                </div>
+            </div>
+
+            <div class="work">
+              <img src="image/developers.avif">
+              <div class="layer">
+                  <h3>Developers Forum</h3>
+                  <p>
+                    Our e-learning site offers accessible and engaging courses with a user-friendly interface, flexible pricing options, and instructor support, facilitating learning for all learners.
+                  </p>
+              </div>
+              <div class="btn-container">
+                  <a href="https://the-developers-den.onrender.com/">LIVE</a>
+                  <a href="https://github.com/Andrew-comm/Django-Project">CODE</a>
+              </div>
+          </div>   
+
+
+            <div class="work">
+              <img src="image/shop.jpg">
+              <div class="layer">
+                  <h3>TaskMaster: Your Ultimate Task Management Solution</h3>
+                  <p>
+                    TaskMaster is the all-in-one task manager designed to streamline your productivity, helping you stay organized and on top of your to-do list effortlessly.
+                  </p>
+              </div>
+              <div class="btn-container">
+                  <a href="https://to-do-list-js9z.onrender.com/">LIVE</a>
+                  <a href="https://github.com/Andrew-comm/To-Do-List">CODE</a>
+              </div>
+            </div>
+
             <div class="work">
               <img src="image/store.png">
               <div class="layer">
@@ -179,35 +253,6 @@
                   <a href="https://simple-ecommerce-flame.vercel.app">LIVE</a>
                   <a href="https://github.com/Andrew-comm/Django-Project">CODE</a>
               </div>
-            </div>
-
-            <div class="work">
-              <img src="image/bet.jpg">
-              <div class="layer">
-                  <h3>BetLux API</h3>
-                  <p>
-                    BetLux is a Django API project designed to facilitate sports betting, providing RESTful endpoints for managing bets, odds, and user accounts., other routes /VIP/, /offers/
-                  </p>
-              </div>
-              <div class="btn-container">
-                  <a href="andrew254.pythonanywhere.com/free/">LIVE</a>
-                  <a href="https://github.com/Andrew-comm/Django-Project">CODE</a>
-              </div>
-          </div>
-            
-        
-            <div class="work">
-                <img src="image/developers.avif">
-                <div class="layer">
-                    <h3>Developers Forum</h3>
-                    <p>
-                      Our e-learning site offers accessible and engaging courses with a user-friendly interface, flexible pricing options, and instructor support, facilitating learning for all learners.
-                    </p>
-                </div>
-                <div class="btn-container">
-                    <a href="https://github.com/Andrew-comm/Django-Project">LIVE</a>
-                    <a href="https://github.com/Andrew-comm/Django-Project">CODE</a>
-                </div>
             </div>
 
             <div class="work">
@@ -224,64 +269,73 @@
               </div>
             </div>
 
+
             <div class="work">
-              <img src="image/shop.jpg">
+              <img src="image/bet.jpg">
               <div class="layer">
-                  <h3>TaskMaster: Your Ultimate Task Management Solution</h3>
+                  <h3>BetLux API</h3>
                   <p>
-                    TaskMaster is the all-in-one task manager designed to streamline your productivity, helping you stay organized and on top of your to-do list effortlessly.
+                    BetLux is a Django API project designed to facilitate sports betting, providing RESTful endpoints for managing bets, odds, and user accounts., other routes /VIP/, /offers/
                   </p>
               </div>
               <div class="btn-container">
-                  <a href="https://github.com/Andrew-comm/To-Do-List">LIVE</a>
-                  <a href="https://github.com/Andrew-comm/To-Do-List">CODE</a>
+                  <a href="andrew254.pythonanywhere.com/free/">LIVE</a>
+                  <a href="https://github.com/Andrew-comm/Django-Project">CODE</a>
               </div>
-            </div>       
-
-        </div>
-    <a href="https://github.com/Andrew-comm" class="btn">See More..</a>
-
-    </div>
-  </div>
-
-  <div id="contact">
-    <div class="container">
-      <div class="row">
-        <div class="contact-col-1">
-          <h1 class="sub-title">Contact Me</h1>
-          <p><i class="fa-solid fa-square-phone"></i>+254769570325</p>
-          <p><i class="fa-sharp fa-solid fa-envelope"></i>ndrwrono2001@gmail.com</p>
-  
-          <div class="social-icons">         
-            <a href="https://twitter.com/Andrew49079855"><i class="fa-brands fa-square-twitter"></i></a>
-            <a href="https://www.linkedin.com/in/andrew-rono-971b45227"><i class="fa-brands fa-linkedin"></i></a>           
-            <a href="https://github.com/Andrew-comm"><i class="fa-brands fa-github"></i></a>
           </div>
-          <a href="image/andreas.pdf" download class="btn btn2"> Download My Resume</a>
-          
-        </div>
-        
-        <div class="contact-col-2">
-          <form name="submit-to-google-sheet">
-            <input type="text" name="Name" placeholder="Enter your name" required>
-            <input type="email" name="Email" placeholder="Enter your email" required>
-            <textarea name="Message" rows="6" placeholder="Your message"></textarea>
-            <button type="submit" class="btn btn2">Submit</button>
-          </form>
-          <span id="msg"></span>
-          
-        </div>
 
+            <!-- Repeat the above structure for other projects -->
+
+        </div>
+        <a href="https://github.com/Andrew-comm" class="btn">See More..</a>
+    </div>
+</div>
+
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col contact-info-card">
+        <div class="card-contact">
+          <div class="card-body">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fas fa-phone-alt"></i><a href="tel:+254769570325" style="text-decoration: none;">+254769570325</a></p>
+            <p><i class="fas fa-envelope"></i><a href="mailto:ndrwrono2001@gmail.com" style="text-decoration: none;">ndrwrono2001@gmail.com</a></p>
+            <div class="whatsapp">
+              <a href="https://api.whatsapp.com/send?phone=254769570325" style="text-decoration: none; color: #0c0fce;"><i class="fab fa-whatsapp" style="margin-right: 5px;"></i>Let's chat on WhatsApp</a>
+            </div>
+            <div class="social-icons">         
+              <a href="https://twitter.com/Andrew49079855"><i class="fa-brands fa-square-twitter"></i></a>
+              <a href="https://www.linkedin.com/in/andrew-rono-971b45227"><i class="fa-brands fa-linkedin"></i></a>           
+              <a href="https://github.com/Andrew-comm"><i class="fa-brands fa-github"></i></a>
+            </div>            
+          </div>
+        </div>
       </div>
-    
-
-      
+      <div class="col contact-form-card">
+        <div class="card">
+          <div class="card-body">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Enter your name" required>
+              <input type="email" name="Email" placeholder="Enter your email" required>
+              <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+              <button type="submit" class="btn btn3">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="copyright">
-      <p>Copyright © <i class="fa-solid fa-heart"></i>Andrew Rono 2023</p>
+    <div class="row resume">
+      <div class="col">
+        <a href="image/andreas.pdf" download class="btn btn2"> Download My Resume</a>
+      </div>
     </div>
-
   </div>
+
+  <div class="copyright">
+    <p>Copyright © <i class="fas fa-heart"></i>Andrew Rono 2023</p>
+  </div>
+</div>
 
   
   <script src="script.js" defer></script>
@@ -315,6 +369,37 @@
       event.currentTarget.classList.add('active-links');
       document.getElementById(tabname).classList.add("active-tab");
     }
+
+  </script>
+
+  <script>
+    function toggleMenu() {
+      var menu = document.getElementById('side-menu');
+      menu.classList.toggle('active');
+
+
+    // Get the menu icon and the side menu
+    var menuIcon = document.getElementById('menu-icon');
+    var sideMenu = document.getElementById('side-menu');
+
+    // Add event listener to the menu icon to toggle the side menu
+    menuIcon.addEventListener('click', toggleMenu);
+
+    // Function to toggle the side menu
+    function toggleMenu() {
+      sideMenu.classList.toggle('active');
+    }
+
+    // Add event listener to the window to close the menu when clicking outside
+    window.addEventListener('click', function(event) {
+      // Check if the clicked element is not the menu icon or the side menu
+      if (event.target !== menuIcon && event.target !== sideMenu && !sideMenu.contains(event.target)) {
+        // If so, close the menu
+        sideMenu.classList.remove('active');
+      }
+    });
+
+}
 
   </script>
 
