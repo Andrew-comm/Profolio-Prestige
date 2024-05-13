@@ -7,176 +7,167 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
     <script src="https://kit.fontawesome.com/79a1a846e3.js" crossorigin="anonymous"></script>
 </head>
 
 
 
-<body>
-  <!-- <video id="bg-video" autoplay loop muted>
-    <source src="image/background.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video> -->
-  
+<body>  
   <div id="header">
     <div class="container">
-      <nav>
-        <h2 class="header-title">Andrew Rono</h2>
-        <i class="fa-sharp fa-solid fa-bars" id="menu-icon" onclick="toggleMenu()"></i>
-        <ul id="side-menu">
-          <li><a href="#header">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
+      <nav class="navbar bg-none cursor-pointer flex justify-center items-center glass rounded-3xl outline outline-red-200 outline-1 w-[70%] mt-4 mx-auto tablet:flex tablet:justify-end tablet:outline-none tablet:w-full">
+        <!-- <p class="name_code text-white text-4xl justify-start">KSC</p> -->
+
+        <ul class="dropdown_menu flex space-x-24 justify-center text-white text-lg font-normal mr-4 my-6 tablet:flex-col tablet:space-x-0 tablet:w-full tablet:mr-0 tablet:items-center tablet:space-y-6 tablet:text-center">
+            <li class="active:drop-shadow-lg active:scale-105 active:duration-500" id="nav_text"><a href="#">Home</a></li>
+            <li class="active:drop-shadow-lg active:scale-105 active:duration-500" id="nav_text"><a href="#services">Skills</a></li>
+            <li class="active:drop-shadow-lg active:scale-105 active:duration-500" id="nav_text"><a href="#projects">Works</a></li>
+            <li class="active:drop-shadow-lg active:scale-105 active:duration-500" id="nav_text"><a href="#contact">Contact</a></li>
         </ul>
-      </nav>
-  
-      <div class="header-content">
-        <h2 class="role">FULL STACK DEVELOPER</h2>
-        <h1 class="name">Hi there, I'm <span id="changing-text">Andrew</span> from Kenya....</h1>
-        <p class="description">Passionate about creating user-friendly web applications that deliver seamless experiences to end-users.</p>
-        <a href="#contact" class="cta-btn">Get in Touch</a>
-      </div>
-  
-      <div class="cards-container">
-        <div class="card">
-          <i class="fas fa-tools"></i>
-          <h3>Experience</h3>          
-          <p class="years">4+ Years</p>
-        </div>
-        <div class="card">
-          <i class="fas fa-users"></i>
-          <h3>Clients</h3>          
-          <p class="number">30+</p>
-        </div>
-        <div class="card">
-          <i class="fas fa-project-diagram"></i>
-          <h3>Projects</h3>          
-          <p class="number">20+</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
+    </nav>
 
 
-  <div id="about">
-    <div class="row">
-      <div class="about-col-1">
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="image/andy.jpg">
 
+     
+
+      <div class="Welcome_container h-screen flex justify-evenly items-center tablet:flex-col tablet:gap-8 tablet:mt-10">
+
+
+        <!-- welcome section-1 -->
+        <div class="welcome_sub_container flex flex-col glass_2 rounded-xl w-[55%] h-[400px] py-4 px-5 justify-around 2xl:w-[50%] xl:h-[350px] lg:h-[320px] tablet:w-[80%] tablet:h-[400px] min-w-[277px]">
+            <!-- Top part-->
+            <div class="flex justify-between items-center mobile-1:flex-col mobile-1:justify-start mobile-1:gap-2">
+
+                <div class="flex gap-3 justify-center items-center mobile-1:self-start">
+                    <!-- Avatar img -->
+                    <div class="wel bg-yellow-300 rounded-full p-2">
+                        <img src="./image/avatar.png" alt="Avatar Image" class="w-[40px] h-[40px] mobile-1:w-[32px] mobile-1:h-[32px] mobile-1:p-1">
+                    </div>    
+                    
+                    <!-- Name, ability -->
+                    <div class="flex flex-col">
+                        <p class="text-white font-bold text-lg sm:text-sm mobile-1:font-semibold">Hi, I'm Andrew Rono</p>
+                        <p class="txt text-gray-300 text-sm font-semibold sm:text-xs "> Experienced Full stack Developer</p>
+                    </div>
+                </div>
+
+                <!-- Media Icons --> 
+                <div class="flex justify-center items-center gap-5 sm:gap-3 mobile-1:self-start mobile-1:ml-1">
+                  <a href="https://github.com/Andrew-comm" target="blank" class="contact-link">
+                      <div class="contact-icon glass_4 rounded-md p-2 cursor-pointer shadow-lg hover:scale-125 duration-150 transform ease-in-out hover:drop-shadow-lg">
+                          <img src="./image/github_icon_white.png" alt="Github icon" class="icon">
+                      </div>    
+                  </a>
+                  <a href="https://www.linkedin.com/in/andrew-rono-971b45227/" target="blank" class="contact-link">
+                      <div class="contact-icon glass_4 rounded-md p-2 cursor-pointer shadow-lg hover:scale-125 duration-150 transform ease-in-out hover:drop-shadow-lg">
+                          <img src="./image/linkedin_icon_white.png" alt="Linked icon" class="icon">
+                      </div>    
+                  </a>
+                  <a href="https://twitter.com/Andrew49079855" target="blank" class="contact-link">
+                      <div class="contact-icon glass_4 rounded-md p-2 cursor-pointer shadow-lg hover:scale-125 duration-150 transform ease-in-out hover:drop-shadow-lg">
+                          <img src="./image/twitter_icon_white.png" alt="Twitter icon" class="icon">
+                      </div>    
+                  </a>
+              </div>
+              
+              <div class="flex flex-col justify-center items-center space-y-3">
+                <div class="contact-card glass_2 rounded-md p-3">
+                    <p class="contact-info"><i class="fas fa-phone-alt"></i><a href="tel:+254769570325" class="contact-link">+254769570325</a></p>
+                    <p class="contact-info"><i class="fas fa-envelope"></i><a href="mailto:ndrwrono2001@gmail.com" class="contact-link">ndrwrono2001@gmail.com</a></p>
+                    <div class="whatsapp">
+                        <a href="https://api.whatsapp.com/send?phone=254769570325" class="contact-link"><i class="fab fa-whatsapp whatsapp-icon"></i>WhatsApp</a>
+                    </div>
+                </div>
             </div>
-            <div class="flip-card-back">
-              <img src="image/andy.jpg">
-
+            
+            
+              
             </div>
+
+            <!-- Middle Part -->
+            <div>
+              <p class="text-4xl tracking-wide text-white font-semibold drop-shadow-sm 2xl:text-3xl sm:text-xl">Driven by Passion</p>
+              <p class="text-4xl tracking-wide text-white font-semibold drop-shadow-sm 2xl:text-3xl sm:text-xl">to Master Technology</p>
           </div>
 
-        </div>         
+            <!-- Last Part -->
+            <div class="w-[60%] mobile-1:w-[70%]">
+              <p class="text-md text-gray-700 font-semibold 2xl:text-sm 2xl:tracking-wider sm:text-xs sm:font-normal sm:leading-5">
+                  Committed to delivering exceptional services, I leverage cutting-edge technologies and best practices to ensure optimal results, staying at the forefront of innovation.
+              </p>
+          </div>
+          
+            
+        </div>           
+            <div class="profileBox max-w-[400px] max-h-[400px] glass rounded-xl flex justify-center items-center xl:w-[350px] xl:h-[350px] lg:h-[320px] lg:w-[320px] sm:w-[277px] sm:h-[277px]">
+                <img src="./image/andy.jpg" alt="Profile Image" class="profile_img object-cover rounded-xl">
+            </div>
 
-      </div>
+       
 
-      <div class="about-col-2">
-        <h1 class="sub-title">About Me</h1>
+    </div>   
+
+    </div>
+
+
+
+<div id="services">
+  <div class="container">
+    <h1 class="sub-title">My Expertise and Capabilities</h1>
+
+    <div class="services-list">
+      <div class="animated-border">
+        <i class="fas fa-code"></i>
+        <h2>Front-end Web Development</h2>
         <p>
-          I'm a skilled web developer with expertise in both front-end and back-end development. I specialize in using technologies such as React and Django to create dynamic and powerful web applications that meet the unique needs of my clients. With a deep understanding of both the technical and creative aspects of web development, I bring a comprehensive approach to each project I undertake.
-          My passion for web development stems from a desire to create seamless and intuitive user experiences. 
+          I specialize in HTML, CSS, and JavaScript, Tailwind CSS, and use these technologies to create responsive and interactive user interfaces. I also use frameworks such as Bootstrap, Vue.js, and React to streamline the development process and deliver high-quality results.
         </p>
+      </div>
 
-        <div class="tab-titles">
-          <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
-          <p class="tab-links" onclick="opentab('experience')">Experience</p>
-          <p class="tab-links" onclick="opentab('education')">Education</p>
+      <div class="animated-border">
+        <i class="fas fa-server"></i>
+        <h2>Backend Web Development</h2>          
+        <p>
+          Server-Side Programming: I use server-side programming languages such as PHP, Python to create web applications that interact with databases and APIs. I also use frameworks such as Laravel, Django, and Ruby to speed up the development process and improve code quality.
+        </p>
+      </div>
 
-        </div>
-        <div class="tab-content active-tab" id="skills">          
-          <ul>
+      <div class="animated-border">
+        <i class="fas fa-database"></i>
+        <h2>Database Management</h2>          
+        <p>
+          Database Design and Implementation: I have expertise in designing and implementing databases using MySQL, PostgreSQL, SQLite, Apache Cassandra, and MongoDB. I work closely with clients to understand their business needs and design databases that meet their requirements while ensuring data integrity and security.
+        </p>
+      </div>
 
-            <li><span>Front-end Development</span><br>JavaScript-React <br>HTML/CSS <br>Responsive Design <br>Tailwind css </li>
-            <li><span>Backend-end Development</span><br>Python-Django <br>Php-Laravel</li>
-            <li><span>Database management </span><br>postgress,sqlite,mysql</li>
+      <div class="animated-border">
+        <i class="fab fa-aws"></i>
+        <h2>AWS Services</h2>          
+        <p>
+          I provide AWS services including but not limited to cloud computing, storage, databases, machine learning, and more. Leveraging the power of AWS, I help businesses scale and innovate efficiently.
+        </p>
+      </div>
 
-          </ul>        
-        </div>
-
-        <div class="tab-content" id="experience">          
-          <ul>
-
-            <li><span>2023-To date </span><br>React framework, <br>Vuejs, <br>Laravel,</li>
-            <li><span>2022</span><br>PythonDjango</li>
-            <li><span>2021</span><br>Basic programming</li>
-          </ul>        
-        </div>
-
-        <div class="tab-content" id="education">          
-          <ul>
-            <li><span>2020-To date </span><br>Multimedia University</li>
-            <li><span>2020-2023</span><br>Google  Career Courses</li>   
-
-          </ul>
-        
-        </div>
-
+      <div class="animated-border">
+        <i class="fab fa-erp"></i>
+        <h2>ERP Solutions</h2>          
+        <p>
+          I specialize in ERPNext and Frappe. ERPNext is an open-source ERP solution that helps businesses manage their processes across various functions such as accounting, inventory, HR, and CRM. Frappe is a full-stack web application framework used to build ERPNext and other applications rapidly.
+        </p>
       </div>
 
     </div>
 
   </div>
+</div>
 
-  <div id="services">
-    <div class="container">
-      <h1 class="sub-title">My Expertise and Capabilities</h1>
-  
-      <div class="services-list">
-  
-        <div class="animated-border">
-          <i class="fas fa-code"></i>
-          <h2>Front-end Web Development</h2>
-          <p>
-            I specialize in HTML, CSS, and JavaScript, Tailwind CSS, and use these technologies to create responsive and interactive user interfaces. I also use frameworks such as Bootstrap, Vue.js, and React to streamline the development process and deliver high-quality results.
-          </p>
-        </div>
-  
-        <div class="animated-border">
-          <i class="fas fa-server"></i>
-          <h2>Backend Web Development</h2>          
-          <p>
-            Server-Side Programming: I use server-side programming languages such as PHP, Python to create web applications that interact with databases and APIs. I also use frameworks such as Laravel, Django, and Ruby to speed up the development process and improve code quality.
-          </p>
-        </div>
-  
-        <div class="animated-border">
-          <i class="fas fa-database"></i>
-          <h2>Database Management</h2>          
-          <p>
-            Database Design and Implementation: I have expertise in designing and implementing databases using MySQL, PostgreSQL, SQLite, Apache Cassandra, and MongoDB. I work closely with clients to understand their business needs and design databases that meet their requirements while ensuring data integrity and security.
-          </p>
-        </div>
-  
-        <div class="animated-border">
-          <i class="fab fa-aws"></i>
-          <h2>AWS Services</h2>          
-          <p>
-            I provide AWS services including but not limited to cloud computing, storage, databases, machine learning, and more. Leveraging the power of AWS, I help businesses scale and innovate efficiently.
-          </p>
-        </div>
-  
-        <div class="animated-border">
-          <i class="fab fa-erp"></i>
-          <h2>ERP Solutions</h2>          
-          <p>
-            I specialize in ERPNext and Frappe. ERPNext is an open-source ERP solution that helps businesses manage their processes across various functions such as accounting, inventory, HR, and CRM. Frappe is a full-stack web application framework used to build ERPNext and other applications rapidly.
-          </p>
-        </div>
-  
-      </div>
-  
-    </div>
-  </div>
   
 
   <div id="projects">
@@ -185,9 +176,9 @@
         <div class="work-list">        
             
             <div class="work">
-                <img src="image/echo.png">
+                <img src="image/echo.png">                
                 <div class="layer">
-                    <h3>StudentVoice</h3>
+                  <h3>StudentVoice</h3>
                     <p>
                         An all-rounded campus feedback system that allows students to give feedback on various aspects of campus life, including academics, facilities, and services.
                     </p>
@@ -211,6 +202,21 @@
                     <a href="https://github.com/Andrew-comm/MarketHub.git">CODE</a>
                 </div>
             </div>
+
+            <div class="work">
+              <img src="image/pos.png">
+              <div class="layer">
+                  <h3>SwiftSale</h3>
+                  <p>
+                      SwiftSale is a comprehensive point of sale system developed using Django. It offers efficient management of inventory, sales, and customer transactions, providing a seamless experience for businesses.
+                  </p>
+              </div>
+              <div class="btn-container">
+                  <a href="https://swiftsale.onrender.com/">LIVE</a>
+                  <a href="https://github.com/Andrew-comm/SwiftSale">CODE</a>
+              </div>
+          </div>
+          
 
             <div class="work">
               <img src="image/developers.avif">
@@ -271,9 +277,9 @@
 
 
             <div class="work">
-              <img src="image/bet.jpg">
+              <img src="image/bet.jpg">              
               <div class="layer">
-                  <h3>BetLux API</h3>
+                <h3>BetLux API</h3>
                   <p>
                     BetLux is a Django API project designed to facilitate sports betting, providing RESTful endpoints for managing bets, odds, and user accounts., other routes /VIP/, /offers/
                   </p>
@@ -287,12 +293,30 @@
             <!-- Repeat the above structure for other projects -->
 
         </div>
-        <a href="https://github.com/Andrew-comm" class="btn">See More..</a>
+        <a href="https://github.com/Andrew-comm" class="btn-more">See More..</a>
     </div>
 </div>
 
+
+
 <div id="contact">
-  <div class="container">
+  <div class="Get_in_touch_main_container w-[60%] h-auto glass_2 rounded-xl mx-auto mt-24 mb-24 pb-6 pt-2 text-center tablet:w-[70%] tablet:mb-16 mobile-1:w-[90%]" id="GetInTouch">
+    <form action="https://api.web3forms.com/submit" method="POST" class="space-y-10">
+  
+        <input type="hidden" name="access_key" value="6f0a59d2-df71-4c9d-b572-411ff85e5371">
+        <p class="font-bold text-4xl text-gray-900 drop-shadow-md tracking-wider mobile-1:text-3xl">Get In Touch</p>
+        
+        <div class="flex flex-col justify-center items-center space-y-3">
+            <input type="text" name="name" required class="w-[80%] py-4 px-2 bg-slate-100 text-gray-600 rounded-md mobile-1:py-2 mobile-2:text-sm mobile-2:w-[90%]" placeholder="Your Name" id="client_name">
+            <input type="email" name="email" required class="w-[80%] py-4 px-2 bg-slate-100 text-gray-600 rounded-md mobile-1:py-2 mobile-2:text-sm mobile-2:w-[90%]" placeholder="Email" id="client_email">
+            <textarea type="text" name="message" required  rows="5" placeholder="Enter Message" id="client_message" class="w-[80%] h-[200px] py-4 px-2 bg-slate-100 text-gray-600 rounded-md mobile-2:text-sm mobile-2:w-[90%]"></textarea>
+        </div>
+        
+        <button type="submit" class="sendBtn bg-blue-300 rounded-lg mx-auto px-4 py-2 font-semibold hover:bg-blue-700 hover:text-white transition-all duration-500 ease-in-out transform active:scale-105 active:duration-500 active:bg-blue-300">Send Message</button>
+        
+    </form>
+  </div>
+  <!-- <div class="container">
     <div class="row">
       <div class="col contact-info-card">
         <div class="card-contact">
@@ -324,95 +348,27 @@
           </div>
         </div>
       </div>
-    </div>
+    </div>-->
+
+    
     <div class="row resume">
       <div class="col">
-        <a href="image/andreas.pdf" download class="btn btn2"> Download My Resume</a>
+        <a href="image/andreas.pdf" download>
+          <button class="sendBtn bg-blue-300 rounded-lg mx-auto px-4 py-2 font-semibold hover:bg-blue-700 hover:text-white transition-all duration-500 ease-in-out transform active:scale-105 active:duration-500 active:bg-blue-300">Download Resume</button>
+      </a>
+        <!-- <a href="image/andreas.pdf" download class="btn-resume"> Download My Resume</a> -->
       </div>
     </div>
-  </div>
+  </div> 
 
   <div class="copyright">
     <p>Copyright © <i class="fas fa-heart"></i>Andrew Rono 2023</p>
+    <p class="rights text-gray-300">All Rights Reserved</p>
   </div>
 </div>
 
   
   <script src="script.js" defer></script>
-  <script>      
-        // Array of text values to cycle through
-        const textValues = ["Andrew", "Passionate Developer", "Web Enthusiast", "Front-End Guru", "Backend Developer"];
-        const changingText = document.getElementById("changing-text");
-        let index = 0;
-
-        function changeText() {
-            changingText.textContent = textValues[index];
-            index = (index + 1) % textValues.length;
-        }
-
-        // Call the changeText function every 2 seconds (adjust the timing as needed)
-        setInterval(changeText, 2500);
-    </script>
-
-
-<script>
-    var tablinks = document.getElementsByClassName('tab-links');
-    var tabcontent = document.getElementsByClassName('tab-content');
-
-    function opentab(tabname){
-      for(tablink of tablinks){
-        tablink.classList.remove('active-links');
-      }
-      for (tab of tabcontent){
-        tab.classList.remove('active-tab');
-      }
-      event.currentTarget.classList.add('active-links');
-      document.getElementById(tabname).classList.add("active-tab");
-    }
-
-  </script>
-
-  <script>
-    function toggleMenu() {
-      var menu = document.getElementById('side-menu');
-      menu.classList.toggle('active');
-
-
-    // Get the menu icon and the side menu
-    var menuIcon = document.getElementById('menu-icon');
-    var sideMenu = document.getElementById('side-menu');
-
-    // Add event listener to the menu icon to toggle the side menu
-    menuIcon.addEventListener('click', toggleMenu);
-
-    // Function to toggle the side menu
-    function toggleMenu() {
-      sideMenu.classList.toggle('active');
-    }
-
-    // Add event listener to the window to close the menu when clicking outside
-    window.addEventListener('click', function(event) {
-      // Check if the clicked element is not the menu icon or the side menu
-      if (event.target !== menuIcon && event.target !== sideMenu && !sideMenu.contains(event.target)) {
-        // If so, close the menu
-        sideMenu.classList.remove('active');
-      }
-    });
-
-}
-
-  </script>
-
-  <script>
-     var sidemenu = document.getElementById('side-menu');
-     function openmenu(){
-      sidemenu.style.right='0';
-     }
-     
-     function closemenu(){
-      sidemenu.style.right='-200px';
-     }
- </script>
 
 <script>
   const scriptURL = 'https://script.google.com/macros/s/AKfycbyeJi5fY0Y0pKxd4O5QfGYY4WW0t1PuoNW1-PYCltzQ8jwdkxjrZX21aLF9XeE72Ge-OA/exec'
