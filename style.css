@@ -283,7 +283,6 @@ p {
   margin-right: 20px; /* Add margin at the end */
 }
 
-
 .animated-border {
   border: 2px solid red;
   /* Initial border style */
@@ -292,7 +291,7 @@ p {
   /* Apply animation */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   height: 350px; /* Increased height */
-  width: 350px;
+  width: 100%;
   margin-left: 10px; /* Add space to the left */
   margin-right: 10px; /* Add space to the right */
 }
@@ -358,7 +357,43 @@ p {
     box-shadow: 0 0 10px red;
   }
 }
-  
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 1024px) {
+  .services-list {
+    grid-template-columns: repeat(2, 1fr); /* Two cards per row */
+    grid-gap: 20px;
+    margin-left: 10px; /* Reduce margin */
+    margin-right: 10px; /* Reduce margin */
+  }
+
+  .animated-border {
+    height: auto; /* Adjust height for smaller screens */
+    margin-left: 5px; /* Reduce space to the left */
+    margin-right: 5px; /* Reduce space to the right */
+  }
+
+  #services {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-list {
+    grid-template-columns: 1fr; /* One card per row */
+    grid-gap: 20px;
+  }
+
+  .animated-border {
+    height: auto; /* Adjust height for smaller screens */
+    margin-left: 0; /* Remove space to the left */
+    margin-right: 0; /* Remove space to the right */
+  }
+
+  #services {
+    padding: 10px;
+  }
+}
 
 
 #projects {
@@ -483,6 +518,49 @@ p {
 .btn-more:hover {
   background: #008000;
 }
+
+@media (max-width: 768px) {
+  #projects {
+    padding: 20px;
+  }
+
+  .work-list {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+
+  .work {
+    height: auto;
+  }
+
+  .work img {
+    height: auto;
+  }
+
+  .layer {
+    position: relative;
+    opacity: 1;
+    background-color: transparent;
+    padding: 10px;
+  }
+
+  .btn-container {
+    position: relative;
+    background-color: transparent;
+    padding: 5px;
+  }
+
+  .btn-container a {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+
+  .btn-more {
+    padding: 10px 20px;
+  }
+}
+
+
 #contact {
   padding: 50px;
 
